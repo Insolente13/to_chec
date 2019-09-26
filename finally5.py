@@ -129,7 +129,7 @@ class LinkedList:
         elif afterNode is not None and self.head is not None:
             node = self.head
             while node is not None:
-                if node.value == afterNode:
+                if node.value == afterNode.value:
                     if node is not None and node.next is None:
                         node.next = newNode
                         self.tail = newNode
@@ -139,7 +139,8 @@ class LinkedList:
                         node.next = newNode
                         break
                 node = node.next
-
+        else:
+            return None
 
 '''* 1.8. Напишите функцию, которая получает на вход два связанных списка,
 состоящие из целых значений, и если их длины равны,
