@@ -42,7 +42,6 @@ class LinkedList:
         node_len = 0
         break_point = 0
 
-        print(f'Выполняем удаление {val}, где all is {all}')
         while node is not None:
             node_len += 1
             # Первое и единственное
