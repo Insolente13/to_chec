@@ -118,7 +118,7 @@ class LinkedList:
     insert(afterNode, newNode). Если afterNode = None и
     список пустой, добавьте новый элемент первым в списке.'''
 
-    def insert(self, newNode, afterNode=None):
+    def insert(self, afterNode, newNode):
         if afterNode is None and self.head is None:
             self.head = newNode
             self.tail = newNode
